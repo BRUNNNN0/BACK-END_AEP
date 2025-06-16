@@ -33,6 +33,7 @@ public class Posts {
     private LocalDateTime dataCriacao;
 
     private int curtidas;
+    private String urlImage;
 
     @OneToMany(mappedBy = "post", cascade = CascadeType.ALL, orphanRemoval = true)
     @JsonIgnore
